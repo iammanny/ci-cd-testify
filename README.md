@@ -12,5 +12,8 @@
 #### Installation
     How to install nodejs
 
+#### Installation
+    How to install nextjs
+
 
 Test Repository for CI CD Project
