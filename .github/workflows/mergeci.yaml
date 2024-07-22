@@ -1,9 +1,10 @@
-name: Mercge CI
+
+name: Merge CI
 on: [ pull_request ]
 jobs:
   Test:
     runs-on: ${{ matrix.os }}
-    strategy:
+    stratgy:
     matrix:
       os: [ ubuntu-latest, windows-latest, macos-latest ]
     steps:
