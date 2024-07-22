@@ -1,8 +1,11 @@
 name: Merge CI
-on: [ pull reaquest ]
+on: [ pull_reaquest ]
 jobs:
   Test:
-    runs-on: [ ubuntu-latest, windows-latest, macos-latest ]
+    runs-on: ${{ matrix.os }}
+    strategy:
+    number:
+      os: [ ubuntu-latest, windows-latest, macos-latest ]
     steps:
       - uses: actions/checkout@v2
       - run: python main.py
