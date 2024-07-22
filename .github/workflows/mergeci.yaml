@@ -1,10 +1,10 @@
-name: Merge CI
-on: [ pull_reaquest ]
+name: Mercge CI
+on: [ pull_request ]
 jobs:
   Test:
     runs-on: ${{ matrix.os }}
     strategy:
-    number:
+    matrix:
       os: [ ubuntu-latest, windows-latest, macos-latest ]
     steps:
       - uses: actions/checkout@v2
